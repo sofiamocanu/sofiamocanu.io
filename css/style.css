@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-image{
+    height: 120px;
+    width: auto;
+    display: block;
+}
+
+/* NAVIGATION BAR SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    position: sticky;  /* the navigation bar always sits at the top even if you scroll down */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    position: relative;
+    top: -14px;
+}
+
+.nav-button {
+    position: relative;
+    top: -14px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500; 
+    /* idk about this, liked how it looks before */
+    font-size: 0.95rem;
+}
+
+/* BIG TEXT (Hero ik) SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.big-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.very-big-text {
+    font-size: clamp(4.5rem, 9vw, 8.5rem);
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.06em;
+    line-height: 0.85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.line-one {
+    display: block;
+    position: relative;
+    padding-right: 1.4em;
+}
+
+.plus-sign {
+    font-weight: 900;
+    position: absolute;
+    right: 0.8em;
+    top: -0.05em;
+}
+
+.line-two {
+    display: block;
+    margin-top: 0.005em;
+    padding-left: 3ch;
+}
+
+/* PROFILE SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;      
+    padding: 0 20px;
+    scroll-margin-top: 140px;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-work-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
+.image-profile {
+    flex: 1;
+    text-align: center;
+}
+.profile-pic {
+    width: 250px;              
+    height: auto;              
+}
+
+.contact {
+    flex: 1;
+    scroll-margin-top: 100px;
+}
+
+.contact-title {
+    margin-bottom: 15px;
+}
+
+.contact ul {
+    list-style: none;          
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 20px;
+}
+
+.contact strong {
+    display: block;       
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll; 
+}
+
+/* PROJECTS SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.projects {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+}
+
+.project-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.project-row > div {
+    flex: 1;
+}
+
+.project-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #f5f5f5;
+}
+
+.project-row h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.project-row p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444444;
+}
+
+.project-row a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2px;
+}
+
+.project-row a:hover {
+    color: #666666;
+    border-color: #666666;
+}
+
+/* BLOG SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.blog {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+}
+
+.blog > div {
+    display: flex;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+/* this flex box lines up the time tag and text block side by side */
+
+.blog time {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #999999;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+.blog > div > div {
+    flex: 1;
+}
+
+.blog h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.blog a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.blog a:hover {
+    color: #666666;
+}
+
+/* CV SECTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.cv-layout {
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.cv-layout h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin-bottom: 60px;
+}
+
+.cv {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+}
+/* fractional units, takes up two shares (or 2/3) / one share (1/3) of the space */
+
+.cv h2 {
+    font-size: 22px;
+    font-weight: 900;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.cv article {
+    margin-bottom: 30px;
+}
+
+.cv h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cv h4 {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.cv p {
+    font-size: 15px;
+    color: #444444;
+}
+
+.cv ul {
+    list-style: none;
+}
+
+.cv li {
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
+/* Max Width 1024px!!!!!!!!! */
+@media (max-width: 1024px) {
+    .cv {
+        gap: 40px; /* reduces huge desktop spacing slightly */
+    }
+    
+    .very-big-text {
+        letter-spacing: -0.04em; /* slightly less compressed for mid-screens */
+    }
+}
+
+/* Max Width 768px!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+    /* navbar adjustments */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1.5rem 1rem;
+    }
+
+    .nav-bar, .nav-button {
+        position: static; /* this resets the negative top offset so it centers nicely */
+    }
+
+    .nav-bar {
+        gap: 1.2rem;
+    }
+
+    /*smaller very-big-text  */
+    .big-text {
+        padding: 2rem 1rem;
+    }
+
+    .line-one, .line-two {
+        padding: 0; /* clear space so big words don't clip outside screens */
+        text-align: center;
+    }
+
+    .plus-sign {
+        position: static; /* pulls plus sign inside normal text */
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    /* stack Profile columns vertically */
+    .profile {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .image-profile {
+        order: -1; /* puts profile picture at the top of the bio card */
+    }
+
+    /* stacks Project items vertically */
+    .project-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* stacks Blog columns vertically */
+    .blog > div {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .blog time {
+        width: auto;
+    }
+
+    /* snaps CV two-column layout into a single column layout */
+    .cv {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .cv-layout h1 {
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    /* narrows navbar padding so text doesn't touch screen edges */
+    nav {
+        padding: 1rem 0.5rem;
+    }
+
+    .nav-bar {
+        gap: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.85rem; /* slightly smaller menu items to fit screen width */
+    }
+
+    /* shrinks the huge titles so they don't go over lines */
+    .cv-layout h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .projects h2, .blog h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+}
